@@ -16,13 +16,16 @@ public class MergeSort implements Sorter {
 
     @Override
     public <T> void sort(T[] c, Comparator<? super T> comparisonStrategy) {
-        mergeSort(c, c.length,comparisonStrategy);
+        mergeSort(c, 0, c.length-1,comparisonStrategy);
     }
 
-    private <T> void mergeSort(T[] c, int n, Comparator<? super T> comparisonStrategy) {
+    private <T> void mergeSort(T[] c, int left, int right, Comparator<? super T> comparisonStrategy) {
+
+
     }
 
-    private <T> void merge(T[] c, T[] l, T[] r, int left, int right, Comparator<? super T> comparisonStrategy) {
+    private <T> void merge(T[] c, int left, int mid, int right, Comparator<? super T> comparisonStrategy) {
+
 
     }
 }
